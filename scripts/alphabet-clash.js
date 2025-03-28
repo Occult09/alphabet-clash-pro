@@ -10,7 +10,14 @@
 
 function continueGame() {
     // step-1: generate a random alphabet
-    getARandomAlphabet();
+    const alphabet = getARandomAlphabet();
+
+    // step-2 : show the randomly generated alphabet on the screen
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText = alphabet;
+
+    // set background color
+    setBackgroundColorById(alphabet);
 }
 
 function playNow() {
