@@ -17,15 +17,15 @@
 <body class="font-poppins">
     <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- home screen -->
-        <section class="home text-white flex flex-col items-center hidden">
+        <section id="home-screen" class="text-white flex flex-col items-center">
             <div class="min-h-screen flex flex-col justify-center items-center gap-10">
                 <h1 class="text-[170px] font-anton">Alpha Clash Pro</h1>
                 <p class="text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn bg-white text-black text-2xl font-semibold rounded-lg px-8 py-7">Play Now</button>
+                <button onclick="playNow()" class="btn bg-white text-black text-2xl font-semibold rounded-lg px-8 py-7">Play Now</button>
             </div>
         </section>
         <!-- playground screen -->
-        <section class="play-ground hidden">
+        <section id="play-ground" class="hidden">
             <div class="flex flex-col items-center justify-center pt-20 gap-20">
                 <!-- screen -->
                 <div class="border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] w-[1170px] h-[450px]">
@@ -90,7 +90,7 @@
             </div>
         </section>
         <!-- score screen -->
-        <section class="score flex justify-center items-center min-h-screen">
+        <section class="score flex justify-center items-center min-h-screen hidden">
             <div
                 class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg w-[396px] h-[282px] flex flex-col items-center justify-center">
                 <h1 class="text-7xl">
@@ -102,6 +102,8 @@
             </div>
         </section>
     </main>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/alphabet-clash.js"></script>
 </body>
 
 </html>
