@@ -25,12 +25,13 @@
             </div>
         </section>
         <!-- playground screen -->
-        <section class="play-ground">
+        <section class="play-ground hidden">
             <div class="flex flex-col items-center justify-center pt-20 gap-20">
                 <!-- screen -->
                 <div class="border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] w-[1170px] h-[450px]">
                     <div class="flex justify-center">
-                        <p class="font-medium text-white bg-[#2F2941] px-4 pb-4 rounded-b-xl">Don't watch keyboard while playing...</p>
+                        <p class="font-medium text-white bg-[#2F2941] px-4 pb-4 rounded-b-xl">Don't watch keyboard while
+                            playing...</p>
                     </div>
                     <div class="flex justify-center items-center h-full">
                         <p class="text-black text-9xl font-bold">Y</p>
@@ -78,18 +79,27 @@
                         Life
                         <img src="images/heart.svg" alt="">
                         <span>1</span>
-                      </button>
-                      <button class="btn rounded-full bg-[#360490] text-white border-0 text-xl font-medium p-4">
+                    </button>
+                    <button class="btn rounded-full bg-[#360490] text-white border-0 text-xl font-medium p-4">
                         Score
                         <img src="images/dollar.svg" alt="">
                         <span>1</span>
-                      </button>
-                      
+                    </button>
+
                 </div>
             </div>
         </section>
-        <section class="score">
-
+        <!-- score screen -->
+        <section class="score flex justify-center items-center min-h-screen">
+            <div
+                class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg w-[396px] h-[282px] flex flex-col items-center justify-center">
+                <h1 class="text-7xl">
+                    <span class="font-extrabold">Score:</span>
+                    <span>14</span>
+                </h1>
+                <button class="btn p-3 w-[175px] h-[61px] text-2xl font-semibold text-[#010313]">Play Again</button>
+                <p>Practice will make you a Pro</p>
+            </div>
         </section>
     </main>
 </body>
